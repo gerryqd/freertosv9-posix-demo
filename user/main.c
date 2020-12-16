@@ -14,7 +14,7 @@ void vTask1(void* pvParameters)
     volatile unsigned long ul;
     for(;;)
     {
-        vPrintString(pcTaskName);
+        vPrintString("%s", pcTaskName);
         for(ul=0; ul<mainDELAY_LOOP_COUNT; ul++)
         {
         }
@@ -28,7 +28,7 @@ void vTask2(void* pvParameters)
     volatile unsigned long ul;
     for(;;)
     {
-        vPrintString(pcTaskName);
+        vPrintString("%s", pcTaskName);
         for(ul=0; ul<mainDELAY_LOOP_COUNT; ul++)
         {
         }
